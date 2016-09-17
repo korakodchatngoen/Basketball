@@ -1,8 +1,10 @@
 <template>
-  <input type="submit" value="+1" @click="addPoint(1)">
-  <input type="submit" value="+2" @click="addPoint(2)">
-  <input type="submit" value="+3" @click="addPoint(3)">
-  <input type="submit" value="-1" @click="disPoint">
+  <div class="">
+    <input type="submit" value="+1" @click="addPoint(1)">
+    <input type="submit" value="+2" @click="addPoint(2)">
+    <input type="submit" value="+3" @click="addPoint(3)">
+    <input type="submit" value="-1" @click="addPoint(-1)">
+  </div>
 </template>
 
 <script>

@@ -4,14 +4,14 @@
       Home <br>
       <display :point = "pointHome"></display>
       <br><br>
-      <manage-point :add-point="addPointHome" :dis-point = "disPointHome">
+      <manage-point :add-point="addPointHome">
     </div>
     <br><br>
     <div>
       Away <br>
       <display :point = "pointAway"></display>
       <br><br>
-      <manage-point :add-point="addPointAway" :dis-point = "disPointAway">
+      <manage-point :add-point="addPointAway">
     </div>
   </div>
 </template>
@@ -35,20 +35,8 @@ export default {
     addPointHome: function (point) {
       this.pointHome += point
     },
-    disPointHome: function () {
-      this.pointHome -= 1
-      if (this.pointHome <= 0) {
-        this.pointHome = 0
-      }
-    },
     addPointAway: function (point) {
       this.pointAway += point
-    },
-    disPointAway: function () {
-      this.pointAway -= 1
-      if (this.pointAway <= 0) {
-        this.pointAway = 0
-      }
     }
   }
 }
