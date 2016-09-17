@@ -34,9 +34,15 @@ export default {
   methods: {
     addPointHome: function (point) {
       this.pointHome += point
+      if (this.pointHome <= 0) {
+        this.pointHome = 0
+      }
     },
     addPointAway: function (point) {
       this.pointAway += point
+      if (this.pointAway <= 0) {
+        this.pointAway = 0
+      }
     }
   }
 }
